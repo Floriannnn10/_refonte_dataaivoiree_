@@ -4,8 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "prebuild": "cross-env ROLLUP_USE_NODE_JS=true",
     "build": "vite build",
+    "dev": "vite",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -137,7 +138,9 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.1",
-    "vite": "^5.0.12"
+    "vite": "^5.0.12",
+    "rollup": "^4.16.4",
+    "cross-env": "^7.0.3"
   },
   "engines": {
     "node": "18.x"
