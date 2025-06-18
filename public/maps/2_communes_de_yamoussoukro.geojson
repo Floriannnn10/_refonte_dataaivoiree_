@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Yamoussoukro Centre",
+        "type": "Commune",
+        "population": 281735
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-5.2893, 6.8276],
+            [-5.2700, 6.8276],
+            [-5.2700, 6.8100],
+            [-5.2893, 6.8100],
+            [-5.2893, 6.8276]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Quartier Administratif",
+        "type": "Commune",
+        "population": 55420
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-5.2700, 6.8276],
+            [-5.2500, 6.8276],
+            [-5.2500, 6.8100],
+            [-5.2700, 6.8100],
+            [-5.2700, 6.8276]
+          ]
+        ]
+      }
+    }
+  ]
+}

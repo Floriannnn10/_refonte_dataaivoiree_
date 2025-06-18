@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/IMG/LOGO_SITE.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="DataIvoire - La plateforme de données ouvertes de la Côte d'Ivoire. Accédez, analysez et partagez les données statistiques du pays." />
+  <meta name="keywords" content="données, statistiques, Côte d'Ivoire, open data, visualisation, cartographie" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <title>DataIvoire - Données ouvertes de la Côte d'Ivoire</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/entry-client.jsx"></script>
+  <!-- AOS Animation Init -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+  </script>
+</body>
+
+</html>

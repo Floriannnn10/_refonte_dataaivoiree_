@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Abobo",
+        "type": "Commune",
+        "population": 1030658
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-4.0167, 5.4333],
+            [-4.0000, 5.4333],
+            [-4.0000, 5.4167],
+            [-4.0167, 5.4167],
+            [-4.0167, 5.4333]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cocody",
+        "type": "Commune",
+        "population": 447055
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-3.9833, 5.3500],
+            [-3.9667, 5.3500],
+            [-3.9667, 5.3333],
+            [-3.9833, 5.3333],
+            [-3.9833, 5.3500]
+          ]
+        ]
+      }
+    }
+  ]
+}
