@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { EyeIcon, EyeSlashIcon } from '@heroicons/react/24/outline';
 
 export default function Register() {
@@ -13,6 +13,8 @@ export default function Register() {
     confirmPassword: '',
     acceptTerms: false,
   });
+
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -29,6 +31,13 @@ export default function Register() {
 
   return (
     <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+      <button
+        type="button"
+        onClick={() => navigate(-1)}
+        className="mb-4 text-orange-500 hover:text-green-600 text-sm font-medium flex items-center"
+      >
+        &#8592; Retour
+      </button>
       <div className="bg-white py-8 px-4 shadow-lg sm:rounded-lg sm:px-10">
         <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
           Créer un compte

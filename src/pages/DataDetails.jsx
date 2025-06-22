@@ -123,7 +123,7 @@ const DataDetails = () => {
 
   return (
     <div className="min-h-screen bg-transparent">
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-2 sm:px-4 py-4">
         <motion.button
           onClick={handleGoBack}
           whileHover={{ x: -5 }}
@@ -138,46 +138,46 @@ const DataDetails = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="bg-white/50 backdrop-blur-sm rounded-xl shadow-sm p-6 mb-8"
+          className="bg-white/50 backdrop-blur-sm rounded-xl shadow-sm p-4 sm:p-6 mb-8"
         >
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+          <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between mb-6">
             <div>
-              <h1 className="text-2xl font-bold text-gray-900 mb-2">{datasetDetails?.title}</h1>
-              <p className="text-gray-600">{datasetDetails?.description}</p>
+              <h1 className="text-2xl font-bold text-gray-900 mb-2 text-center md:text-left">{datasetDetails?.title}</h1>
+              <p className="text-gray-600 text-center md:text-left">{datasetDetails?.description}</p>
             </div>
-            <div className="flex items-center gap-4">
+            <div className="flex flex-col gap-2 w-full md:w-auto md:flex-row md:items-center md:gap-4">
               <button 
                 onClick={handleVisualizationClick}
-                className="inline-flex items-center px-4 py-2 bg-[#009B4D] text-white rounded-lg hover:bg-[#FF6B00] transition-colors"
+                className="inline-flex items-center justify-center w-full md:w-auto px-4 py-2 bg-[#009B4D] text-white rounded-lg hover:bg-[#FF6B00] transition-colors"
               >
                 <FiBarChart2 className="mr-2" />
                 Voir la visualisation
               </button>
-              <button className="inline-flex items-center px-4 py-2 bg-[#FF6B00] text-white rounded-lg hover:bg-[#009B4D] transition-colors">
+              <button className="inline-flex items-center justify-center w-full md:w-auto px-4 py-2 bg-[#FF6B00] text-white rounded-lg hover:bg-[#009B4D] transition-colors">
                 <FiDownload className="mr-2" />
                 Télécharger
               </button>
-              <button className="inline-flex items-center px-4 py-2 border-2 border-[#009B4D] text-[#009B4D] rounded-lg hover:bg-[#009B4D] hover:text-white transition-colors">
+              <button className="inline-flex items-center justify-center w-full md:w-auto px-4 py-2 border-2 border-[#009B4D] text-[#009B4D] rounded-lg hover:bg-[#009B4D] hover:text-white transition-colors">
                 <FiShare className="mr-2" />
                 Partager
               </button>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div className="flex items-center gap-3 text-gray-600">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="flex items-center gap-3 text-gray-600 justify-center sm:justify-start">
               <FiCalendar className="w-5 h-5 text-[#FF6B00]" />
               <span>Mis à jour le {new Date(datasetDetails.updatedAt).toLocaleDateString()}</span>
             </div>
-            <div className="flex items-center gap-3 text-gray-600">
+            <div className="flex items-center gap-3 text-gray-600 justify-center sm:justify-start">
               <FiDatabase className="w-5 h-5 text-[#009B4D]" />
               <span>{datasetDetails.category}</span>
             </div>
-            <div className="flex items-center gap-3 text-gray-600">
+            <div className="flex items-center gap-3 text-gray-600 justify-center sm:justify-start">
               <FiFileText className="w-5 h-5 text-[#FF6B00]" />
               <span>{datasetDetails.format}</span>
             </div>
-            <div className="flex items-center gap-3 text-gray-600">
+            <div className="flex items-center gap-3 text-gray-600 justify-center sm:justify-start">
               <FiBarChart2 className="w-5 h-5 text-[#009B4D]" />
               <span>{datasetDetails.type}</span>
             </div>

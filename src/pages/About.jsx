@@ -374,7 +374,7 @@ export default function About() {
             >
               <motion.button
                 type="submit"
-                className="inline-flex items-center px-6 py-3 text-white font-semibold bg-orange-500 rounded-lg hover:bg-orange-600 transform transition-all duration-300"
+                className="inline-flex items-center px-6 py-3 text-white font-semibold bg-orange-500 rounded-lg hover:bg-green-600 transform transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >

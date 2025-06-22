@@ -184,7 +184,7 @@ export default function Home() {
             </motion.p>
             <motion.div
               variants={itemVariants}
-              className="mt-10 flex items-center gap-x-6"
+              className="mt-10 flex flex-col gap-y-4 items-center justify-center gap-x-6 sm:flex-row sm:gap-y-0"
             >
               <Button
                 variant="primary"
@@ -459,7 +459,7 @@ export default function Home() {
           <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-orange-100">
             Contribuez à la transparence et à l'innovation en Côte d'Ivoire en partageant et analysant les données.
           </p>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
+          <div className="mt-10 flex flex-col gap-y-4 items-center justify-center gap-x-6 sm:flex-row sm:gap-y-0">
             <Button
               variant="primary"
               size="lg"
@@ -481,4 +481,4 @@ export default function Home() {
       </motion.div>
     </div>
   );
-} 
+}
